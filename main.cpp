@@ -57,27 +57,6 @@ cout << "Sum is "<<sum2 << endl;
 
     /*
     //problem2-b
-    int count = 0, num =2, n;
-    cout << "HOW MANY PRIME NUMBERS SHOULD I PRINT?:" << endl;
-    cin >> n;
-    cout << "First " << n<<" prime numbers are: " << endl;
-
-    for (; count < n; num++) {
-        bool isPrime = true;
-        for (int i = 2; i*i <=num; i++) {
-
-            if (num % i == 0) {
-                isPrime = false;
-                break;
-            }
-        }
-        if (isPrime) {
-            cout << num << endl;
-            count++;
-        }
-    }
-
-*/
 
     int count = 0, num =2, n;
     int i =2;
@@ -100,8 +79,11 @@ cout << "Sum is "<<sum2 << endl;
         num++;
     }
 
+*/
+    
+    
     /*
-    //problem4
+    //problem3
     int n;
     cout << "Enter n(starting point of Collatz Conjecture): ";
     cin >> n;
@@ -118,8 +100,71 @@ cout << "Sum is "<<sum2 << endl;
     cout << "1"<<endl;
 */
 
+    /*
+//problem4
+
+    
+int input, count=0;
+cout<<"Input: "<<endl;
+cin>>input;
+if (input == 0) {  // Special case for 0
+        count = 1;
+    } 
+    else {
+        while(input>0){
+    input= input/10;
+    count++;
+}
+}
+cout<<"The number has "<<count<<" digits"<<endl;
+}
+*/
+
+/*
+//problem5
+
+int input, count=0;
+cout<<"Input: "<<endl;
+cin>>input;
+
+    while(input>0){
+
+    cout<<input%10;
+ input= input/10;
+    count++;
+}
 
 
+*/
 
+/*
+
+//problem6
+
+
+int first, second, min, max;
+cout<<"Enter two integers"<<endl;
+cin>>first>>second;
+
+if (first>second){
+   min=second; 
+   max = first;
+    }
+    else
+    {
+        min = first;
+        max = second;
+        }
+        int i=2, final=1;
+    while (i<=min){
+        if(min%i==0 && max%i==0){
+           final = i;
+            }
+        i++;
+}
+cout<<final<<endl;
     return 0;
 }
+
+*/
+
